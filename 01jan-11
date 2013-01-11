@@ -94,3 +94,16 @@ E = {Q * cos :theta:}/{4:pi::epsilon:_0(L^2+(d/2)^2)} * 2 =
   = {Q * d}/{4:pi::epsilon:_0(L^2 +(d/2)^2)^{3/2}} :~=:
   :~=: Qa / {4:pi::epsilon:_0L^3}
 
+
+
+
+Linjeladdning / kurvaladdning
+Ytladdning (till exempel i gammal TV-apparat)
+Volymsladdning (till exempel i åskmoln)
+
+:math:
+:lambda::int=:[ds] {}/r * :vec:E?
+
+dE = {:lambda: ds}/{4:pi::epsilon:_0 r^2}:vec:e
+:vec:E = :int:_tråden {:lambda: ds}/{4:pi::epsilon:_0 r^2} :vec:e
+
