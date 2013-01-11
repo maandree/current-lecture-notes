@@ -87,7 +87,7 @@ d  | - - - - - - - - - - - - - - - - - - - - - o - E ?   ---> x
 |  |		  					     _|  :vec:E_+
  \(-)
 
-Enbart y-komponenten överelver
+Enbart y-komposanten överelver
 
 :math:
 E = {Q * cos :theta:}/{4:pi::epsilon:_0(L^2+(d/2)^2)} * 2 =
@@ -106,4 +106,43 @@ Volymsladdning (till exempel i åskmoln)
 
 dE = {:lambda: ds}/{4:pi::epsilon:_0 r^2}:vec:e
 :vec:E = :int:_tråden {:lambda: ds}/{4:pi::epsilon:_0 r^2} :vec:e
+
+
+
+
+
+lång rak tråd, :lambda:
+
+                    ____x___
+        dy         /        \dx
+--------||-------------------||--------      ---> x		Bara y-komposanten överlever
+                  |         /
+		          /
+		  |      /
+	:sym:	R      /
+		  |   /  r
+		    /
+		  |/ <- - - -- - vinkel = :theta:
+		 /* E?
+	       |_ |
+		  
+		  |
+		 \|/
+		 -y
+
+
+dE_y = {:lambda: dx cos :theta:}/{4:pi::epsilon:_0 r^2}
+
+<=> E_y :int:[-:inf:->:inf:] {:lambda: dx cos :theta:}/{4:pi::epsilon:_0 r^2}
+
+
+r = R/{cos :theta:}
+x = R tan :theta:
+
+dx/d:theta: = R / {cos^2 :theta:} ==> dx = R / {cos^2 :theta:} d:theta:
+
+E_y = :int:[-:pi:/2->:pi:/2] {:lambda: R cos :theta: cos^2 :theta:}/{cos^2 :theta: 4:pi::epsilon:_0 R^2} d:theta:
+    = :int:[-:pi:/2->:pi:/2] {:lambda: cos :theta:}/{4:pi::epsilon:_0 R} d:theta: =
+    = :lambda:/{4:pi::epsilon:_0 R} [sin :theta:][-:pi:/2->:pi:/2]
+    = :lambda:/{4:pi::epsilon:_0 R}
 
