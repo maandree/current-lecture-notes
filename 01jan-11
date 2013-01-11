@@ -1,3 +1,13 @@
+:oc:
+_1
+_2
+^2
+:vec:
+:pi:
+:epsilon:
+_0
+:math:
+
 Idag
 ----
 
@@ -6,6 +16,7 @@ Coulombslag
 Elekt[r]iskt fält
 Fält från dipoler
 Fält från linjeladdning
+
 
 
 
@@ -20,4 +31,15 @@ andra är minus; tyvärr gav han dem fel tecken.
 
 Man visate inte vad det laddning bestod av,
 men det hindrade inte tillämpningen.
+
+Om två kulor har laddningarna Q_1 och Q_2,
+dess avståd är R_1_2 så har kraften F :oc: Q_1Q_2,
+F :oc: r_1_2^2.
+
+F repellativ om Q_1Q_2 > 0,
+attraktiv om Q_1Q_2 < 0.
+
+:vec:F_1 = {Q_1Q_2 :vec:e_2_1}/{4:pi::epilon:_0 r_1_2^2}
+
+:epilon:_0 = :math:8,854*10^{-12} Vs/Am
 
