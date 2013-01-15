@@ -76,4 +76,6 @@ Tidsberoende
 
 	T = Period, tid efter vilken vågen upprepas
 
+	:omega: = vinkelfrekvens [rad/s]
+
 
