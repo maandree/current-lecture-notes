@@ -1,3 +1,5 @@
+:^-1:
+
 BAkustik
 
 Vågor, exempel:
@@ -77,5 +79,7 @@ Tidsberoende
 	T = Period, tid efter vilken vågen upprepas
 
 	:omega: = vinkelfrekvens [rad/s]
+
+	f = frekvens [s:^-1: = Hz] = 1/T = :omega:/(2:pi:)
 
 
