@@ -47,8 +47,8 @@ s = s_0 sin (kX + :delta:),	[k] = rad/m
  | _______ct_______ |     /           \                          /
  |/                \|    /             \                        /
  +------------------+---/---------------\----------------------/-----------------> X
- |                  |  /                 \                    /                x
- |                  |  /                  \                  /
+ |                  |  / \_______________\____________________/                x
+ |                  |  /                  \  :lambda:        /
  |                  | /                    \                /
  |                  | /                      \            /
  |                  |/---------->               \   _  /
@@ -61,4 +61,12 @@ x = X då t = 0	    x = X + ct => X = x - ct
 
 :math:
 s = s_0 sin (k(c - ct) + :delta:) = s_0 sin (kx - kct + :delta) = s_0 sin (kx - :omega:t + :delta)
+
+
+k:lambda: = 2:pi:
+k = 2:pi:/:lambda:
+
+Rumsberoende
+
+	:lambda: - våglängd, sträcka efter vilken vågen upprepas
 
