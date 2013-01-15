@@ -5,3 +5,34 @@ IMPORTANT:	get a passport (states nationallity)
 
 
 
+-- Introductions to PDC's environment --
+
+( PDC does not like Windows :)
+
+Clusters:
+	Ekman (will retaire)
+	Ferlin (will use this one) (being updated)
+	Povel
+	Ellen
+	Lindgren (biggest cluster)
+
+See http://www.pdf.kth.se/resources/computers
+
+
+
+Ferlin:
+	672 compute nodes
+	8 nodes reserved
+	K-nodes have 8 cores, 16 GB of RAM per node
+
+Cluster nodes:
+	Login nodes - do not un jobs here
+	Interactive nodes - for test runs; alone or shared among users
+	Dedicated nodes (compute nodes) for running final programs (probabily only used for the project)
+
+Use SSH with Kerberos (with haimdal).
+    Password, in any form, is not passed through the network
+    Kerberos principal (username@NADA.KTH.SE)
+    Kerberos realm NADA.KTH.SE
+    Instructions to install kerberos can be found on PDC's website
+
