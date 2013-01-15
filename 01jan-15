@@ -91,3 +91,34 @@ Tidsberoende
 
 2:pi: f = 2:pi:/:lambda: c
 
+
+
+
+Longitudinella vågor (ljud)
+
+s = förskjutning (en: displacement)
+
+
+ s
+/|\                          t = 0
+ |
+ |
+ |       _ 
+ |     / | \                                  /
+ |  /         \                            /
+ | /     |     \                         /    |
+ |/             \                       /
+ +-------|-------\---------------------/------|----------> x
+ |                \                   /
+ |       |       | \                 / |      |
+ |                  \               /
+ |       |       |    \           /    |      |
+ |                       \  _  /
+ |       |       |          |          |      |
+ |
+ |       |       |          |          |      |
+ O       O       O          O          O      O     jämnviktslägen
+ o         o     o       o             o         o
+             högt tryck           lågt tryck
+
+
