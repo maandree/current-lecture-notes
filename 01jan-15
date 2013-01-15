@@ -65,6 +65,10 @@ x = X då t = 0	    x = X + ct => X = x - ct
 s = s_0 sin (k(c - ct) + :delta:) = s_0 sin (kx - kct + :delta) = s_0 sin (kx - :omega:t + :delta)
 
 
+s -- störning
+c -- utspridningshastighet
+
+
 k:lambda: = 2:pi:
 k = 2:pi:/:lambda:
 
@@ -82,4 +86,8 @@ Tidsberoende
 
 	f = frekvens [s:^-1: = Hz] = 1/T = :omega:/(2:pi:)
 
+
+:omega: = kv
+
+2:pi: f = 2:pi:/:lambda: c
 
