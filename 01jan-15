@@ -36,3 +36,19 @@ Use SSH with Kerberos (with haimdal).
     Kerberos realm NADA.KTH.SE
     Instructions to install kerberos can be found on PDC's website
 
+Slide shows include some Kerberos commands
+
+Login using kerberos tickets:
+      kinit -f -l 7d username@NADA.KTH.SE
+      ssh username@ferlin.pdc.kth.se
+      klist -Tf
+
+Slide shows include how to go to interactive node
+
+File systems:
+
+     Scratch, 40 GB per node, clean with ticket expires
+     AFS, presistent
+     	  your home directory
+
+
