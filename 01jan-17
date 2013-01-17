@@ -11,3 +11,7 @@ Generic structure of parallel computers
 	Where there is no global memory we have a "share nothing" architecture (also known as a distributed
 	memory architecture), also known as a multicomputer.
 
+	Ferlin is both multiprocessor and multicomputer, because it is a cluster of multicored computers.
+	Each processor as a cache and each computer has a shared memory, the among is cache is a trade off.
+	For each computer the memory is treated as with shared memory only.
+
