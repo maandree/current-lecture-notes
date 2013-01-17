@@ -1,0 +1,13 @@
+Generic structure of parallel computers
+	A perallel computer is a collection of concurrently executing, communicating processing elements
+	Potential for largeperformance boost:
+		  1000 processors run 1000 times faster than one processor
+	Or, tackle a problem 1000 time the size, accuracy, ...
+	A parallel computer increases memory capacity &c
+
+	A collection of P processor--memory paries that communicates with eachother
+
+	When there is a global memory we have a shared memory architecture, also known as a multiprocessor
+	Where there is no global memory we have a "share nothing" architecture (also known as a distributed
+	memory architecture), also known as a multicomputer.
+
