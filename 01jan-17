@@ -69,3 +69,13 @@ Fortunately, for many algorithms we have T*_s :~=: T_1.
 Estimating the efficiency of a parallel program includes also an estimation of memory and
 communication overhead.
 
+
+
+The execution time on a one processor, for rank sort, is T_1 = :O:(n^2).
+
+Assume that we have a shared memory machine (multpiprocessor). In that case, there is no
+additional memory needed and no communuication overhead. The body of the i-loop has
+executio time t_i (1 + n + r_i)R_a = :O:(n), where r_a is the time for one arithmetic operation.
+
+The parallel execution time is, for n <= P. T_P = max_{0 <= i < n} t_i = 2n.
+
