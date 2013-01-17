@@ -137,3 +137,12 @@ Amdahl's Law (1967)
 
 	The scaled speedup can become arbitrarily large.
 
+
+
+Common notations
+
+	T parallel efficiency :eta:p is given by :eta:p = S_P / P
+      
+	The cost C is given by C // TODO se slide //
+
+
