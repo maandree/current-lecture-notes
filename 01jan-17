@@ -124,6 +124,8 @@ Amdahl's Law (1967)
 		- W increases with P
 		- f often decreases with W
 
+	Gustafson's Law (1988)
+
 	Assume that the parallel execution time T_p is constant (Note: For Amdahl's law, the
 	sequential execution time is fixed)
 
