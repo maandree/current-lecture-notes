@@ -150,5 +150,17 @@ s = förskjutning (en: displacement)
 3000 Hz	 Inte vakert! Modem
 5600 Hz	 CRT-TV
 10500 Hz (Bättre än TV) Shyscher [hur det nu en stavas]
+17000 Hz Min gräns (20500 Hz för 4 år sedan)
 
+Störst vid 12 år, de höga frekvenserna utvecklas först.
+
+
+Partikelhastighet
+
+	s = s_0 sin (hx - :omega:t + :delta:)
+	v = :diff:s/:diff:t = s_0 :omega: cos (kc - :omega:t + :delta:)
+	s_0 :omega: = V_max
+	s_0 = 1mm
+	:omega: = 100 Hz
+	==> V_max = 0,1 m/s
 
