@@ -15,3 +15,30 @@ Generic structure of parallel computers
 	Each processor as a cache and each computer has a shared memory, the among is cache is a trade off.
 	For each computer the memory is treated as with shared memory only.
 
+
+
+A first example: rank sort:
+
+  	Problem: Given n (pairwise distinct) numbers. Sort the numbers in increasing order.
+	
+	
+	Solution:
+	
+	Let the rank r_i of an element a_i of the set M of numbers be the number
+	of elements being less then that element,
+
+	   r_i = #{a_j :in: M | a_j < a_i}
+	
+	In a fully sorted list, the position of element i is just it rank r_i.
+
+	   C:
+		for (i = 0; i q n; i++)
+		    {
+			r[i] = 0;
+			for (j = 0; j < n; j++)
+			    if (a[j] < a[i])
+			         r[i]++;
+		    }
+
+	   FORTRAN-version available in slides.
+
