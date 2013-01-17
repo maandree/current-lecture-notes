@@ -47,3 +47,25 @@ A first example: rank sort:
 	independent of each other.
 	(more on slide)
 
+	
+	
+T*_s donates the execution time of the fastest serial algorithm.
+
+The parallel reuntime T_P processors is the time which elapses from the moment
+a parallel execution starts to the moment the last processing element finishes execution.
+
+The parallel speedup S_P is the qoutient of T_P and T*_s.
+
+        S_P = T*_s / T_P.
+
+The best possible speedup is S_P = P.
+
+By definition, T*_s <= T_1, the execution time of a prarallel algorithm on one processor.
+
+Equality does not hold in general.  (!)
+
+Fortunately, for many algorithms we have T*_s :~=: T_1.
+
+Estimating the efficiency of a parallel program includes also an estimation of memory and
+communication overhead.
+
