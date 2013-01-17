@@ -89,3 +89,8 @@ Corollary
 	// TODO rest fo slide //
 
 
+Will use MATLAB-like syntac for describing algorithms
+MATLAB is not an environment for parallel programming!
+All array adressing is 0-based
+Processes are counted 0-based
+
