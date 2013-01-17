@@ -42,3 +42,8 @@ A first example: rank sort:
 
 	   FORTRAN-version available in slides.
 
+
+	The innermost loops (and the loop initialisation) are completely
+	independent of each other.
+	(more on slide)
+
