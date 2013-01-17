@@ -79,3 +79,13 @@ executio time t_i (1 + n + r_i)R_a = :O:(n), where r_a is the time for one arith
 
 The parallel execution time is, for n <= P. T_P = max_{0 <= i < n} t_i = 2n.
 
+
+
+Fact
+	The best known sequential sorting algorithm has complexity T*_s = :O:(n log n).
+	
+Corollary
+	Rank sort on a shared memory machine hs parallel speed up of S_P = T*_s  / T_P = :O:(log P)
+	// TODO rest fo slide //
+
+
