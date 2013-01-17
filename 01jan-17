@@ -89,8 +89,49 @@ Corollary
 	// TODO rest fo slide //
 
 
-Will use MATLAB-like syntac for describing algorithms
+Will use MATLAB-like syntax for describing algorithms
 MATLAB is not an environment for parallel programming!
 All array adressing is 0-based
 Processes are counted 0-based
+
+
+
+Amdahl's Law (1967)
+
+	 Assume that, for a given algorithm, there is a certain fraction f of the
+	 computation which cannot be divided into concurrent tasks.
+
+	 The serial part is then t_s = fT_1
+
+	 On P processing element, we have T_P = fT__1 + (1 - f)T_1 / P
+
+	 The speedup becomes S_p = T_1/(fT_1 + (1 - f)T_1/P) = P/(1 + (P - 1)f)
+
+	 Conclusion
+
+		// TODO see slide //
+
+	Amdahläs law led many to take a pessimistic outlook onto the benefits on parallelism.
+
+	Question
+		So what is wrong with this reasoining?
+
+	Observation
+		Amdahl's law assumes that the workload W remains fixed.
+
+	Fact
+		But parallel computers are used t otackle more ambitious workloads
+		- W increases with P
+		- f often decreases with W
+
+	Assume that the parallel execution time T_p is constant (Note: For Amdahl's law, the
+	sequential execution time is fixed)
+
+	Let f' the fraction of serial time spent in the parallel program
+
+	Nor it holds T_1 = f'T_P + (1 - f')PT_P
+
+	Scaled speedup	   S'_P = f' + (1 - f')P
+
+	The scaled speedup can become arbitrarily large.
 
