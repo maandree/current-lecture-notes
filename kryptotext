@@ -9,3 +9,14 @@ Definition: Cypher - is a algorithm for preforming encrytion and decryption. Tha
 Ceasar ciper: The Ceasar ciper is a old cypher where you shift the letter of the alphabet a number of steps in group of letters $R_27$. For example you can shift them 3 letters to the right, leading to $A \shortrightarrow D, B \shortrightarrow E, C \shortrightarrow F \ldots $.
    The weak point of such a cypher is that common languages are not statistically equal on the usage of letters and wordings. One could use statistics on a cyhertext and easly decrypt the text. For example the occurance of the letter ``e'' is about 0.127, and spaces `` '' are about 0.100. The same kinds of statistics can be applied to frequency of the first letters of words in the English language (That is, in case spaces are encrypted and thus unknown).\footnote{\url{http://en.wikipedia.org/wiki/Letter_frequency} - Letter Frequences.}
 
+And advanced version would be the Vigenère cipher, where you use different keys on different positions of the word.
+It can be viewed algebraically, if we see the letters A to Z as numbers 0-25 and `` '' space as 26, we get.
+Encrypt, where $E$ equals encryption and $K$ is the key:
+$C_i = E_k(M_i) = (M_i + K_i) mod 27$
+
+Decrypt:
+$M_i = D_k(C_i) = (C_i - K_i) mod 27$
+
+One the lenght of the key is known, we can without a problem crack this cypher with letter frequencies.
+
+-- End of Lecture one --
