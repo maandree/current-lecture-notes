@@ -6,3 +6,6 @@ Lecture one, we went through some fundamentals of cryptography, a general overvi
 
 Definition: Cypher - is a algorithm for preforming encrytion and decryption. That is converting a text to a unreadable form for anyone who does not know how to reconvert it to it's original state.
 
+Ceasar ciper: The Ceasar ciper is a old cypher where you shift the letter of the alphabet a number of steps in group of letters $R_27$. For example you can shift them 3 letters to the right, leading to $A \shortrightarrow D, B \shortrightarrow E, C \shortrightarrow F \ldots $.
+   The weak point of such a cypher is that common languages are not statistically equal on the usage of letters and wordings. One could use statistics on a cyhertext and easly decrypt the text. For example the occurance of the letter ``e'' is about 0.127, and spaces `` '' are about 0.100. The same kinds of statistics can be applied to frequency of the first letters of words in the English language (That is, in case spaces are encrypted and thus unknown).\footnote{\url{http://en.wikipedia.org/wiki/Letter_frequency} - Letter Frequences.}
+
