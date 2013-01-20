@@ -1,0 +1,8 @@
+1# DISCLAIMER, this document is plain and needs lots of work converting later to latex.
+
+Krypto:
+
+Lecture one, we went through some fundamentals of cryptography, a general overview of the course, and started on some really simple and old cryptos.
+
+Definition: Cypher - is a algorithm for preforming encrytion and decryption. That is converting a text to a unreadable form for anyone who does not know how to reconvert it to it's original state.
+
