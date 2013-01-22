@@ -1,0 +1,16 @@
+T_P = t_comp + t_comm
+
+t_comp = compution time
+t_comm = communication time
+
+Send only arge blocks, as seldom as possible.
+
+
+Let f be a function of two complex variables. For any z_o :in: :C:
+insider the iteration
+
+	z_{k+1} = f(z_k, d)
+
+A Mandelbrot set is a set of points of ponits d in the complex plane that
+are quasi-stable, i.e. the sequence {z_k} remained bounded for z_0 = 0.
+
