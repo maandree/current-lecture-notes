@@ -21,3 +21,11 @@ SEE NOTES FOR DETAILS
 icc (Intel's C Compiler) is often best at optimisation, available
 as a module at Ferlin.
 
+
+
+gprof (read the compiler manual)
+      compile with -pg
+      run prog
+      run cprog ./prog > prog.prof
+      look at statistics in prog.prof
+
