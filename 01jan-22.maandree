@@ -18,3 +18,6 @@ are quasi-stable, i.e. the sequence {z_k} remained bounded for z_0 = 0.
 SEE NOTES FOR DETAILS
 
 
+icc (Intel's C Compiler) is often best at optimisation, available
+as a module at Ferlin.
+
