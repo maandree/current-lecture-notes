@@ -15,5 +15,6 @@ insider the iteration
 A Mandelbrot set is a set of points of ponits d in the complex plane that
 are quasi-stable, i.e. the sequence {z_k} remained bounded for z_0 = 0.
 
+SEE NOTES FOR DETAILS
 
 
