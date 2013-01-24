@@ -1,0 +1,38 @@
+Övning 1
+
+
+Intensitet
+----------
+I=P/A [W/m^2]
+
+Ljudintensitetsnivå
+-------------------
+:beta: = log_10 (I/I_0) * 10 db,  I_0 = 10^-12 W/m^2  [lägsta en genomsnittsmänniska kan höra]
+
+Specialfall (s. 519)
+--------------------
+För sinusformig ljudvåg
+I = 1/2 a^2 :omega:^2 Z = p^2_max/{2*Z} .. p_max är maximala trycket
+
+a -- förskjutningsamplitud [m]
+:omega: -- vinkelfrekvens [s^-1]
+Z -- akustisk impedans, Z = :rho:*c  [kg*m^2/s]
+
+Z_luft = 420 kg/(m^2*s)
+Z_vatten = 1,5*10^6 kg/(m^2*s)
+
+
+Reflektans, R
+R=I_R/I_in, T = 1 - R
+
+               |
+  I_R/|\      \|/ I_in        Z_1
+      |      __|
+      |      | |
+---------------+-----------'
+               |
+               |              Z_2
+              \|/
+                I_T
+
+R = ((Z_1 - Z_2)/(Z_1 + Z_2))^2
