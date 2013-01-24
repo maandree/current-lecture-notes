@@ -36,3 +36,13 @@ R=I_R/I_in, T = 1 - R
                 I_T
 
 R = ((Z_1 - Z_2)/(Z_1 + Z_2))^2
+
+
+
+
+Startpistol
+===========
+
+Givet: 64 dB  vid  100 m
+Sökt: Akustisk effekt, P
+
