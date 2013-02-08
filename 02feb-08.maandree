@@ -1,7 +1,7 @@
 Strängmatching
 	∙ KMP (knuth–morris–prat)
 	∙ Suffixsortering
-	(∙ Aho-Corasick)
+	(∙ Aho–Corasick)
 --------------------------------
 
 
@@ -212,3 +212,35 @@ Kan förbättras till 𝓞(n log n) genom att använda bucketsort-variant för s
 
 Kan göras i 𝓞(n) tid.
 
+
+
+
+Aho–Corsick
+===========
+
+Som KMP men vi kan söka efter flera mönster samtidigt
+
+P₁ = ”popup”, ”ponny”
+
+			O
+			| p
+			↓
+			O
+			| o
+			↓
+			O
+		     p / \ n
+		      /   \
+		     ↓     ↓
+		     O     O
+		   u |	   | n
+		     ↓	   ↓
+		     O	   O
+		   p |	   | y
+		     ↓	   ↓
+		     O	   O
+
+     Kan hittas på Wikipedia
+
+
+ 
