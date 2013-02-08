@@ -160,3 +160,51 @@ Tumregel: Allt man kan göra med ett suffixträd kan
 	  också göras med en suffix-array, gat en
 	  faktor log n långsammare.
 
+
+Naiv algoritm 𝓞(n² log n)
+
+Viktigt: kan inte explicit skapa alla n suffix
+
+
+Idéer:
+
+∙ Sortera på de 2↑k första tecknen.
+
+    (k = 0, 1, 2, 3, …, log n)
+
+∙ När vi sorterar på prefix av längd 2↑k:
+
+    -- Suffixen redan sorterade på de 2↑{k−1} första tecknen.
+       Bildar grupper av suffix där 2↑{k−1} första tecknen är
+       identiska.
+
+    -- Vi behöver sortera varje grupp påde 2↑{k−1} nästföljande
+       tecknen.
+       Men fessa tecken äär de 2↑{k−1} första för några andra
+       suffix; vi har redan deras ordning.
+
+
+0: ananas ⎫    	2: a[n]as  ⎞ ⎫     2: an[as]  ⎞ ⎫     0: ananas)
+1: nanas  ⎪k=0	4: a[s]    ⎟ ⎪k=1  0: an[an]as⎠ ⎪k=2  2: anas  )
+2: anas   ⎬==>  0: a[n]anas⎠ ⎬==>  4: as[  ]  ) ⎬==>  4: as    ) klar, alla grupper
+3: nas    ⎪	3: n[a]s   ⎞ ⎪     3: na[s ]  ⎞ ⎪     1: nanas ) består av ett element
+4: as     ⎪	1: n[a]nas ⎠ ⎪     1: na[na]s ⎠ ⎪     3: nas   )
+5: s      ⎭	5: s[ ]    ) ⎭     5: s [  ]  ) ⎭     5: s     )
+
+
+Körtid
+
+∙ log n iterationer
+∙ i varje iteration sortera vi ≤ n element	𝓞(n log n) jämförelser
+∙ varje jämförelse kan göras i 𝓞(1) tid
+  genom att hålla reda på vilken position varje suffix finns på
+
+
+Total tid: 𝓞(n log² n) 	  	 	  [log² n = (log n)²]
+
+Inte den snabbaste, men enkel.
+
+
+
+
+
