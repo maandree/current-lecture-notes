@@ -1,5 +1,5 @@
 Strängmatching
-	∙ KMP
+	∙ KMP (knuth–morris–prat)
 	∙ Suffixsortering
 	(∙ Aho-Corasick)
 --------------------------------
@@ -95,4 +95,20 @@ Tid för sökning:
     ∙ totalt antal steg bakåt ≤ totalt antal steg framåt ≤ n
 
     ∴  𝓞(n)
+
+
+När vi beräknat π[1…i−1] och vill beräkna π[i]
+är det som om vi söker efter p₁…π[i−1] i p₁…p_i.
+
+
+MakePrefix(P)
+
+    state ← 0
+    π ← 0
+    for i from 2 to m
+    	while state > 0 and p_i ≠ P_{state+1}
+	      state ← π[state]
+	if p_i ≠ P_{state+1}
+	    state ← state + 1
+	π[c] ← state
 
