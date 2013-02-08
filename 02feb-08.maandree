@@ -206,5 +206,9 @@ Inte den snabbaste, men enkel.
 
 
 
+Kan förbättras till 𝓞(n log n) genom att använda bucketsort-variant för sortering av grupper.
+    	       	    	       	     	 	 (avalg11 hw1?)
 
+
+Kan göras i 𝓞(n) tid.
 
