@@ -1,0 +1,74 @@
+Strängmatching
+	∙ KMP
+	∙ Suffixsortering
+	(∙ Aho-Corasick)
+--------------------------------
+
+
+Strängmatching
+--------------
+
+Givet mönster P = p₁p₂…p_m
+Text  	      T = t₁…t_n
+Hitta alla förekomster av P i T (det vill säga i så att t_i = p₁, t_{i+1} = p₂ … t_{i+m−1} = p_m)
+
+
+Naiv algorithm
+
+for i from 1 to n − m + 1
+    match ← true
+    for j from 1 to m
+    	if p_j ≠ t_{i+j−1} then
+	    match ← false
+	    break
+    if match then
+        report i
+
+Tid 𝓞(n⋅m) = 𝓞(n²)
+
+
+Grundidé för snabbare algorithm: ändlig automat
+
+Exemple möster p = ”popup”
+
+	    p        o        p        u        p
+	0 -----> 1 -----> 2 -----> 3 -----> 4 -----> 5
+
+text T =  ”topupopup”
+tillstånd 0001012345
+                   ↓
+		   matchning!
+
+text T =  ”popopup”
+tillstång  0122345
+
+Automaten beskrivs ab övergångsfunction
+
+	  next(i, c) = nästa tillstånd from tillstånd i om vi läser tecken c
+
+Bra: Givet atutomaten är det lätt att göra strängsökning i 𝓞(n).
+
+Dåligt: Om mönstret är över stort alfabete tar automaten mycket minne.
+
+
+Mer minneseffektivt (ε-övergångar [tomma strängen])
+
+	    p        o        p        u        p
+	0 -----> 1 -----> 2 -----> 3 -----> 4 -----> 5
+	  	 ↑                 |
+		  \_______________/
+			  ε
+
+
+                       ________			   __________________
+	              /	  x			  /         x
+               x     ↓			==>	 ↓     x
+	i−1 -------> i ------->			i-1 -------> i ------->
+
+
+En bakåtpekar på nod
+
+π[i] = största j så att p_i…p_j = p_{i−j+1}…p_i
+(längsta prefix av P som är ett suffix av det vi hittills matchat)
+	 	     	    	       	      	 	  ”−1”
+
