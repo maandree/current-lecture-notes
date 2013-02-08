@@ -72,3 +72,27 @@ En bakåtpekar på nod
 (längsta prefix av P som är ett suffix av det vi hittills matchat)
 	 	     	    	       	      	 	  ”−1”
 
+               (π som i [p]refix)
+
+
+Sökning givet π
+---------------
+
+Search(T, P, π)
+
+    state ← 0
+    for i from i to n
+    	while state > 0 andd t_i ≠ P_{state − 1}
+	    state ← π[state]
+	if P_{state+1} = t_i
+	    state ← state + 1
+	if state = m then
+	    report matchning ending at i
+
+Tid för sökning:
+
+    ∙ varje iteration tar vi (minst) ett steg bakåt
+    ∙ totalt antal steg bakåt ≤ totalt antal steg framåt ≤ n
+
+    ∴  𝓞(n)
+
