@@ -143,6 +143,20 @@ Dåligt:	Väldigt komplicerade algoritmer
 
 
 
+Suffix-array
 
 
+Sortera suffix i alfabetisk ordning
+
+0: ananas ⎫
+1: nanas  ⎪
+2: anas   ⎬=> 0, 2, 4, 1, 3, 5
+3: nas    ⎪
+4: as     ⎪
+5: s      ⎭
+
+
+Tumregel: Allt man kan göra med ett suffixträd kan
+	  också göras med en suffix-array, gat en
+	  faktor log n långsammare.
 
