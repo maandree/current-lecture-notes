@@ -112,3 +112,37 @@ MakePrefix(P)
 	    state ← state + 1
 	π[c] ← state
 
+
+
+
+
+Suffixsortering
+===============
+
+
+Suffixträd
+
+
+En trie med alla suffix till en sträng
+
+Exempel "ananas"
+
+	<< bild 1 >>
+
+Några tillämpningar
+
+-- Vad är längsta delsträng
+   som förekommer ≥ t gånger?
+
+-- Hur många delsträngar av längd ℓ förekommer i både T och T'
+
+
+Bra:	Givet trådet kan många intressanta problem lösas i linjär tid (i trädets storlek)
+
+Dåligt:	Väldigt komplicerade algoritmer
+
+
+
+
+
+
